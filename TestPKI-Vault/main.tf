@@ -8,7 +8,7 @@ terraform {
   }
 }
 
-resource "vault_pki_secret_backend_cert" "this" {
+/* resource "vault_pki_secret_backend_cert" "this" {
   backend = "pki_intermediate"
   name    = "f5demo" # role name
 
@@ -22,4 +22,4 @@ resource "vault_pki_secret_backend_cert" "this" {
       error_message = "${var.common_name} - min remaining time reached. F5 Vault cert should be renewed."
     }
   }
-}
+} */
